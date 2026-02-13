@@ -8,10 +8,10 @@ function App() {
   const { state } = useBlog();
 
   return (
-    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px', fontFamily: 'sans-serif' }}>
+    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px'}}>
       
       {/* Navegación Básica */}
-      <nav style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #ccc', paddingBottom: '10px', marginBottom: '20px' }}>
+      <nav style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #0E0E17', paddingBottom: '10px', marginBottom: '20px' }}>
         <Link to="/" style={{ textDecoration: 'none', color: '#333', fontSize: '24px', fontWeight: 'bold' }}>
           Mi Blog
         </Link>
