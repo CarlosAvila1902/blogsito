@@ -2,6 +2,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { useBlog } from './context/BlogContext';
 import HomePage from './pages/HomePage';
 import CreatePost from './pages/CreatePost';
+import PostDetail from './pages/PostDetail';
 
 function App() {
   const { state } = useBlog();
@@ -28,7 +29,7 @@ function App() {
         <Routes>
           {/* Descomentaremos esto a medida que creemos los archivos */}
           {<Route path="/" element={<HomePage />} />}
-          {/* <Route path="/post/:id" element={<PostDetail />} /> */}
+          {<Route path="/post/:id" element={<PostDetail />} /> }
           {<Route path="/create" element={<CreatePost />} />}
         </Routes>
       )}
