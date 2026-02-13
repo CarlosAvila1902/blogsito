@@ -27,10 +27,9 @@ function App() {
       {/* Aquí vivirán nuestras páginas */}
       {!state.loading && (
         <Routes>
-          {/* Descomentaremos esto a medida que creemos los archivos */}
-          {<Route path="/" element={<HomePage />} />}
-          {<Route path="/post/:id" element={<PostDetail />} /> }
-          {<Route path="/create" element={<CreatePost />} />}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/post/:id" element={<PostDetail />} />
+          <Route path="/create" element={<CreatePost />} />
         </Routes>
       )}
 
