@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import { useBlog } from './context/BlogContext';
-
+import HomePage from './pages/HomePage';
+import CreatePost from './pages/CreatePost';
 
 function App() {
   const { state } = useBlog();
@@ -26,9 +27,9 @@ function App() {
       {!state.loading && (
         <Routes>
           {/* Descomentaremos esto a medida que creemos los archivos */}
-          {/* <Route path="/" element={<HomePage />} /> */}
+          {<Route path="/" element={<HomePage />} />}
           {/* <Route path="/post/:id" element={<PostDetail />} /> */}
-          {/* <Route path="/create" element={<CreatePost />} /> */}
+          {<Route path="/create" element={<CreatePost />} />}
         </Routes>
       )}
 
